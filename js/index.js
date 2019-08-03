@@ -47,21 +47,27 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 // Nav
 let navItem1 = document.querySelectorAll('a')[0];
 navItem1.innerHTML = siteContent["nav"]["nav-item-1"];
+navItem1.style.color = 'green';
 
 let navItem2 = document.querySelectorAll('a')[1];
 navItem2.innerHTML = siteContent["nav"]["nav-item-2"];
+navItem2.style.color = 'green';
 
 let navItem3 = document.querySelectorAll('a')[2];
 navItem3.innerHTML = siteContent["nav"]["nav-item-3"];
+navItem3.style.color = 'green';
 
 let navItem4 = document.querySelectorAll('a')[3];
 navItem4.innerHTML = siteContent["nav"]["nav-item-4"];
+navItem4.style.color = 'green';
 
 let navItem5 = document.querySelectorAll('a')[4];
 navItem5.innerHTML = siteContent["nav"]["nav-item-5"];
+navItem5.style.color = 'green';
 
 let navItem6 = document.querySelectorAll('a')[5];
 navItem6.innerHTML = siteContent["nav"]["nav-item-6"];
+navItem6.style.color = 'green';
 
 
 // CTA
@@ -70,6 +76,10 @@ ctaH1.innerHTML = siteContent["cta"]["h1"]
 
 let button = document.querySelector('button');
 button.innerHTML = siteContent["cta"]["button"];
+button.style.width = '100%';
+button.style.fontSize = '2.25rem';
+button.style.padding = '10px';
+button.style.height = 'auto';
 
 let ctaIMG = document.getElementById("cta-img");
 ctaIMG.setAttribute('src', siteContent["cta"]["img-src"]);
@@ -130,3 +140,20 @@ email.innerHTML = siteContent["contact"]["email"];
 // Footer
 let footer = document.querySelector('footer');
 footer.innerHTML = siteContent["footer"]["copyright"];
+
+//  PATH 3 additions
+const nav = document.querySelector('nav');
+
+const navItem7 = document.createElement('a');
+navItem7.innerHTML = "LAST";
+navItem7.style.color = 'darkred';
+navItem7.style.fontSize = '2.5rem';
+
+const navItem0 = document.createElement('a');
+navItem0.innerHTML = "FIRST";
+navItem0.style.color = 'aqua';
+navItem0.style.fontSize = '3.0rem';
+
+//  Appending and prepending new nav links
+nav.appendChild(navItem7);
+nav.prepend(navItem0);
